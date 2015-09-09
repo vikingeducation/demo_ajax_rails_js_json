@@ -1,0 +1,57 @@
+<hr>
+<h3>Option A: Full HTML Refresh</h3>
+
+<%= form_for post do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <br>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
+
+
+<h3>Option B: AJAX Using Hand-Rolled jQuery</h3>
+
+<%= form_for post, data: { ajaxremote: true } do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <br>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
+
+
+<h3>Option C: AJAX Using a Rails Remote Form</h3>
+
+<%= form_for post, remote: true do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <br>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
+<hr>

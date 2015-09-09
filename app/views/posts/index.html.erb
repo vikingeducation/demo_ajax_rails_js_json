@@ -1,0 +1,20 @@
+<h2>The Post Form Tester</h2>
+
+<%= render partial: "post_form", locals: { post: Post.new } %>
+
+
+<h3>Post List</h3>
+
+<table data-content = "posts" >
+
+  <thead>
+    <th>Title</th>
+    <th>Body</th>
+  </thead>
+  <tbody>
+
+    <%= render @posts %>
+
+  </tbody>
+
+</table>
