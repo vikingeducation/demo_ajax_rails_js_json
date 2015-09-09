@@ -17,7 +17,8 @@ var PostModule = ( function(){
 
   // Attach submit listeners to all forms
   //   we have marked for AJAX submission
-  //   with the data attribute `data-ajaxremote`
+  //   with the custom (completely made-up)
+  //   data attribute `data-ajaxremote`
   var _ajaxFormListener = function(){
 
     $("form[data-ajaxremote='true']").submit( function( event ){
