@@ -1,0 +1,6 @@
+<% flash.each do |type,value| %>
+  <div>
+    <%= "#{type.capitalize}: #{value}" %>
+  </div>
+<% end %>
+<% flash.clear %>

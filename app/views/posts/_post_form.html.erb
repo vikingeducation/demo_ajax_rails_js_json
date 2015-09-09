@@ -1,4 +1,3 @@
-<hr>
 <h3>Option A: Full HTML Refresh</h3>
 
 <%= form_for post do |f| %>
@@ -18,7 +17,7 @@
 <% end %>
 
 
-<h3>Option B: AJAX Using Hand-Rolled jQuery</h3>
+<h3>Option B: AJAX JSON Form with jQuery</h3>
 
 <%= form_for post, data: { ajaxremote: true } do |f| %>
 
@@ -37,7 +36,7 @@
 <% end %>
 
 
-<h3>Option C: AJAX Using a Rails Remote Form</h3>
+<h3>Option C: AJAX JS Form with Rails Remote</h3>
 
 <%= form_for post, remote: true do |f| %>
 
@@ -54,4 +53,3 @@
   <%= f.submit %>
 
 <% end %>
-<hr>
